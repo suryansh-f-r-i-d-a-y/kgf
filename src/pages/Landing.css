@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.content-wrapper {
+.hero-content-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
@@ -421,10 +421,25 @@
 
 .offer-section {
   background-color: #121568;
-  color: #edeae8;
+  color: #edeae8 !important;
   padding: 100px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   min-height: 100vh;
+}
+
+.offer-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.offer-subtitle{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #ffffff;
+  opacity: 0.9;
 }
 
 .container {
@@ -434,25 +449,10 @@
 }
 
 /* Header Content */
-.header-content {
+.offer-header-content {
   text-align: left;
   margin-bottom: 80px;
-  max-width: 600px;
-}
-
-.main-title {
-  font-size: 3.2rem;
-  font-weight: 700;
-  color: #edeae8;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #edeae8;
-  opacity: 0.9;
+  max-width: 800px;
 }
 
 /* Content Wrapper */
@@ -535,11 +535,11 @@
 }
 
 /* Text Content */
-.text-content {
+.offer-text-content {
   padding: 0 20px;
 }
 
-.text-content h2 {
+.offer-text-content h2 {
   font-size: 2.5rem;
   font-weight: 600;
   color: #edeae8;
@@ -547,7 +547,7 @@
   line-height: 1.3;
 }
 
-.text-content p {
+.offer-text-content p {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #edeae8;
@@ -581,7 +581,7 @@
     font-size: 2.5rem;
   }
   
-  .text-content h2 {
+  .offer-text-content h2 {
     font-size: 2rem;
   }
   
@@ -603,20 +603,20 @@
     padding: 60px 0;
   }
   
-  .header-content {
+  .offer-header-content {
     margin-bottom: 60px;
     text-align: center;
   }
   
-  .main-title {
+  .offer-title {
     font-size: 2.2rem;
   }
   
-  .subtitle {
+  .offer-subtitle {
     font-size: 1rem;
   }
   
-  .text-content h2 {
+  .offer-text-content h2 {
     font-size: 1.8rem;
   }
   
@@ -640,11 +640,11 @@
     padding: 0 16px;
   }
   
-  .main-title {
+  .offer-title {
     font-size: 1.8rem;
   }
   
-  .text-content {
+  .offer-text-content {
     padding: 0;
   }
   
@@ -668,7 +668,6 @@
 
 
 .pricing-section {
-  background-color: #edeae8;
   color: #121568;
   padding: 100px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
@@ -711,201 +710,7 @@
 }
 
 /* Pricing Cards */
-.pricing-card {
-  background: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(18, 21, 104, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 350px;
-  position: relative;
-}
 
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(18, 21, 104, 0.15);
-}
-
-.pricing-card.featured {
-  border: 3px solid #121568;
-  transform: scale(1.05);
-}
-
-.pricing-card.featured:hover {
-  transform: scale(1.05) translateY(-10px);
-}
-
-/* Card Image */
-.card-image {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-}
-
-.plan-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.pricing-card:hover .plan-image {
-  transform: scale(1.1);
-}
-
-/* Card Content */
-.card-content {
-  padding: 30px 25px;
-  text-align: center;
-}
-
-.plan-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #121568;
-  margin-bottom: 16px;
-  line-height: 1.3;
-}
-
-.plan-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #121568;
-  opacity: 0.8;
-  margin-bottom: 24px;
-}
-
-.price {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #121568;
-  position: relative;
-  display: inline-block;
-}
-
-.price::before {
-  content: '$';
-  font-size: 1.2rem;
-  position: absolute;
-  left: -15px;
-  top: 8px;
-  opacity: 0.7;
-}
-
-/* Featured Card Special Styling */
-.pricing-card.featured .plan-title {
-  color: #121568;
-}
-
-.pricing-card.featured::before {
-  content: 'Most Popular';
-  position: absolute;
-  top: 15px;
-  right: -30px;
-  background: #121568;
-  color: #edeae8;
-  padding: 8px 40px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  transform: rotate(45deg);
-  z-index: 10;
-}
-
-/* Responsive Design */
-@media (max-width: 968px) {
-  .pricing-section {
-    padding: 80px 0;
-  }
-  
-  .pricing-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-  }
-  
-  .pricing-card.featured {
-    transform: scale(1);
-  }
-  
-  .pricing-card.featured:hover {
-    transform: translateY(-10px);
-  }
-  
-  .main-title {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .pricing-section {
-    padding: 60px 0;
-  }
-  
-  .header-content {
-    text-align: center;
-    margin-bottom: 50px;
-  }
-  
-  .main-title {
-    font-size: 2.2rem;
-  }
-  
-  .subtitle {
-    font-size: 1rem;
-  }
-  
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  .card-content {
-    padding: 25px 20px;
-  }
-  
-  .plan-title {
-    font-size: 1.6rem;
-  }
-  
-  .price {
-    font-size: 2.2rem;
-  }
-  
-  .pricing-card.featured::before {
-    right: -25px;
-    padding: 6px 35px;
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 16px;
-  }
-  
-  .main-title {
-    font-size: 1.9rem;
-  }
-  
-  .pricing-card {
-    max-width: 100%;
-  }
-  
-  .card-image {
-    height: 180px;
-  }
-  
-  .price::before {
-    left: -12px;
-    top: 6px;
-  }
-  
-  .pricing-card.featured::before {
-    right: -20px;
-    padding: 5px 30px;
-    font-size: 0.7rem;
-  }
-}
 
 .concept-section {
   background-color: #edeae8;
@@ -1153,223 +958,7 @@
   }
 }
 
-.gallery-section {
-  background-color: #edeae8;
-  padding: 100px 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-}
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-/* Gallery Grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 300px);
-  gap: 20px;
-  width: 100%;
-}
-
-/* Gallery Items */
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0 8px 25px rgba(18, 21, 104, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(18, 21, 104, 0.15);
-}
-
-.image-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.gallery-item:hover .gallery-image {
-  transform: scale(1.1);
-}
-
-/* Image Overlay */
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(18, 21, 104, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.gallery-item:hover .image-overlay {
-  opacity: 1;
-}
-
-.overlay-content {
-  text-align: center;
-}
-
-.view-icon {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #edeae8;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #edeae8;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.view-icon:hover {
-  background-color: #edeae8;
-  color: #121568;
-  transform: scale(1.1);
-}
-
-/* Responsive Design */
-@media (max-width: 968px) {
-  .gallery-section {
-    padding: 80px 0;
-  }
-  
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 250px);
-    gap: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-section {
-    padding: 60px 0;
-  }
-  
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 200px);
-    gap: 12px;
-  }
-  
-  .gallery-item {
-    border-radius: 12px;
-  }
-  
-  .view-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 0 16px;
-  }
-  
-  .gallery-section {
-    padding: 50px 0;
-  }
-  
-  .gallery-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 250px);
-    gap: 12px;
-  }
-  
-  .view-icon {
-    width: 35px;
-    height: 35px;
-  }
-}
-
-/* Special Grid Layout Adjustments */
-@media (min-width: 969px) {
-  .gallery-item:first-child {
-    grid-row: span 1;
-  }
-  
-  .gallery-item:nth-child(2) {
-    grid-row: span 1;
-  }
-  
-  .gallery-item:nth-child(3) {
-    grid-row: span 2;
-  }
-  
-  .gallery-item:nth-child(4) {
-    grid-row: span 1;
-  }
-  
-  .gallery-item:nth-child(5) {
-    grid-row: span 1;
-  }
-  
-  .gallery-item:nth-child(6) {
-    grid-row: span 1;
-  }
-}
-
-/* Animation Delays for Staggered Effect */
-.gallery-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.gallery-item:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.gallery-item:nth-child(3) {
-  animation-delay: 0.3s;
-}
-
-.gallery-item:nth-child(4) {
-  animation-delay: 0.4s;
-}
-
-.gallery-item:nth-child(5) {
-  animation-delay: 0.5s;
-}
-
-.gallery-item:nth-child(6) {
-  animation-delay: 0.6s;
-}
-
-/* Fade-in Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.gallery-item {
-  animation: fadeInUp 0.6s ease-out forwards;
-}
 
 
 .contact-section {
@@ -1377,7 +966,7 @@
   color: #edeae8;
   padding: 100px 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  min-height: 100vh;
+  border-bottom: 2px solid white;
 }
 
 .container {
@@ -1434,10 +1023,8 @@
   padding: 14px 16px;
   font-size: 1rem;
   font-family: inherit;
-  background-color: rgba(237, 234, 232, 0.08);
-  border: 2px solid rgba(237, 234, 232, 0.2);
-  border-radius: 8px;
-  color: #edeae8;
+  border: 0px;
+  color: #000000;
   transition: all 0.3s ease;
   box-sizing: border-box;
 }
@@ -1445,14 +1032,12 @@
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: rgba(237, 234, 232, 0.5);
-  background-color: rgba(237, 234, 232, 0.12);
   box-shadow: 0 0 0 3px rgba(237, 234, 232, 0.1);
 }
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: rgba(237, 234, 232, 0.5);
+  color: rgba(36, 35, 35, 0.5);
   font-style: italic;
 }
 

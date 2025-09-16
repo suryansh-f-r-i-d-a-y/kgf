@@ -17,7 +17,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 10px 20px;
   box-sizing: border-box;
-  transition: top 0.3s; /* Smooth transition for hiding/showing the navbar */
+  transition: top 0.3s;
   z-index: 1000;
 }
 

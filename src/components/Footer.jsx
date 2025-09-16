@@ -7,8 +7,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-intro">
           <p className="company-description">
-            We are a team focused on delivering thoughtful, effective, and reliable solutions. Our approach 
-            combines creativity, precision, and a deep understanding of our clients' needs.
+          We are an India-based seller of high-quality dry fruits, committed to providing you with fresh, nutritious, and tasty products.
           </p>
         </div>
 
@@ -80,9 +79,9 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <p className="footer-credit">
-            This website was made in{' '}
-            <a href="#" className="webwave-link">WebWave</a>{' '}
-            website builder.
+          Copyright © 2025 {' '}
+            <a href="#" className="webwave-link">Kubera Goods and Fruits</a>{' '}
+            All Rights Reserved.
           </p>
         </div>
       </div>
