@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  padding-top: 60px; /* Add padding to prevent content from being hidden by the sticky navbar */
+  padding-top: 60px;
 }
 
 .navbar {
@@ -26,6 +26,7 @@ height: 160px;
 }
 
 .nav-links a {
+  display: inline-block;
   margin-left: 20px;
   color: #121568;
   text-decoration: none;
@@ -53,4 +54,14 @@ height: 160px;
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+@media (max-width: 480px) {
+  .logo{
+    height: 100px;
+  }
+
+  .nav-links{
+    display: none;
+  }
 }

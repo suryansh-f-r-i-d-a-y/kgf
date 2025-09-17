@@ -276,7 +276,7 @@ const Landing = () => {
 
       {/* sectoin-4 */}
 
-      <section className="concept-section">
+      {/* <section className="concept-section">
         <div className="container">
 
           <div className="concept-block packaging-concept">
@@ -316,7 +316,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* seection-5 */}
 
@@ -422,7 +422,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

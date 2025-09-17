@@ -1,31 +1,37 @@
-
-import React from 'react'
-import './Navbar.css'
-import logo from '../assets/kgflogo.png'
+import React from 'react';
+import './Navbar.css';
+import logo from '../assets/kgflogo.png';
+import { useEffect } from 'react';
 
 const Navbar = () => {
-
-    let lastScrollTop = 0;
-    const navbar = document.getElementById('myNavbar');
+    useEffect(() => {
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('myNavbar');
     
-    window.addEventListener('scroll', function() {
-        const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
-        
-        if (currentScrollPos > lastScrollTop && currentScrollPos > 100) {
-            // Scrolling down and past 100px
-            navbar.style.top = '-10vh'; // Hide navbar (negative of navbar height)
-        } else {
-            // Scrolling up or at top
+        const handleScroll = () => {
+          const currentScrollPos = window.pageYOffset || document.documentElement.scrollTop;
+    
+          if (currentScrollPos > lastScrollTop && currentScrollPos > 100) {
+            navbar.style.top = '-10vh'; // Hide navbar
+          } else {
             navbar.style.top = '0'; // Show navbar
-        }
-        
-        lastScrollTop = currentScrollPos <= 0 ? 0 : currentScrollPos; // For Mobile or negative scrolling
-    });
+          }
+    
+          lastScrollTop = currentScrollPos <= 0 ? 0 : currentScrollPos;
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // cleanup
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
 
     return (
-        <header class="navbar" id="myNavbar">
+        <header className="navbar" id="myNavbar">
           <img src={logo} className='logo' alt="" />
-            <nav class="nav-links">
+            <nav className="nav-links">
                 <a href="#home">Home page</a>
                 <a href="#about">About Us</a>
             </nav>
