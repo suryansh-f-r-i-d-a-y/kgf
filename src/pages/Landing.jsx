@@ -172,8 +172,8 @@ const Landing = () => {
                   <span className="stat-label">Satisfied customers</span>
                 </div>
                 <div className="stat-item">
-                  <div className="stat-number">9</div>
-                  <span className="stat-label">Years of experience</span>
+                  <div className="stat-number">100%</div>
+                  <span className="stat-label">Quality Assured</span>
                 </div>
               </div>
             </div>
@@ -226,18 +226,18 @@ const Landing = () => {
                 <div className="circle-decoration circle-right"></div>
               </div>
               <div className="offer-text-content">
-                <h2>Custom Solutions</h2>
+                <h2>Wholesale Offering</h2>
                 <p>
-                  We provide adaptable services designed to support your goals at every stage of your journey.
+                  We supply premium dry fruits in bulk with assured quality, competitive pricing, and timely delivery. Perfect for retailers, distributors, and businesses looking for reliable sourcing.
                 </p>
               </div>
             </div>
 
             <div className="solution-block proven-results">
               <div className="offer-text-content">
-                <h2>Proven Results</h2>
+                <h2>Custom Request Based</h2>
                 <p>
-                  With a focus on quality and long-term value, we deliver outcomes that make an impact.
+                  We cater to unique needs with tailored dry fruit assortments, packaging, and quantities—perfectly designed to match your brand or occasion.
                 </p>
               </div>
               <div className="image-container">
@@ -281,15 +281,14 @@ const Landing = () => {
 
           <div className="concept-block packaging-concept">
             <div className="text-content">
-              <h2>Product Packaging Concept</h2>
+              <h2>Sustainable Packaging</h2>
               <p>
-                A modern and functional packaging design developed to enhance shelf presence and
-                user experience.
+                We use eco-friendly and secure packaging to keep your dry fruits fresh while caring for the environment.
               </p>
             </div>
             <div className="image-container">
               <img
-                src="https://images.unsplash.com/photo-1602052793312-b99c2a9ee797?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://i.pinimg.com/1200x/1a/1c/b2/1a1cb2d5b602646e44b39a877b08cc89.jpg"
                 alt="Fresh hazelnuts growing on natural tree branch"
                 className="concept-image"
               />
@@ -302,16 +301,15 @@ const Landing = () => {
             <div className="image-container">
               <div className="decorative-shape shape-left"></div>
               <img
-                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                src="https://i.pinimg.com/736x/40/ca/cd/40cacd8e9280af471a7403ba4ceb1d7e.jpg"
                 alt="Elegant pistachio dessert with nuts garnish"
                 className="concept-image"
               />
             </div>
             <div className="text-content">
-              <h2>Brand Identity System</h2>
+              <h2>Quality Assurance</h2>
               <p>
-                A cohesive visual identity including logo, typography, and print materials for
-                consistent brand expression.
+               From festive hampers to bulk orders, our premium dry fruits make the perfect choice for healthy and elegant corporate gifts.
               </p>
             </div>
           </div>

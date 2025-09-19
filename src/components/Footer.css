@@ -237,10 +237,15 @@
 }
 
 @media (max-width: 480px) {
+
+  .column-title{
+    text-align: left;
+  }
+
   .container {
     padding: 0 16px;
   }
-  
+
   .footer-section {
     padding: 40px 0 20px;
   }
@@ -258,9 +263,43 @@
     margin-bottom: 40px;
   }
   
+  /* Make social links and contact info display in 2 columns */
   .social-links,
   .contact-info {
-    gap: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 12px;
+    max-width: none;
+    margin: 0;
+  }
+  
+  /* Adjust link styles for 2-column layout */
+  .social-link,
+  .contact-link {
+    font-size: 0.9rem;
+    padding: 6px 0;
+    justify-self: start;
+    width: 100%;
+  }
+  
+  .social-link span,
+  .contact-link span {
+    font-size: 0.85rem;
+  }
+  
+  /* Smaller icons for mobile 2-column layout */
+  .social-icon,
+  .contact-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+  }
+  
+  /* Reduce gap between icon and text */
+  .social-link,
+  .contact-link {
+    gap: 8px;
   }
   
   .footer-credit {
