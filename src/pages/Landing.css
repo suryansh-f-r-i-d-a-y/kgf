@@ -18,6 +18,8 @@
   gap: 80px;
   align-items: center;
   justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Text Content Styles */
@@ -206,6 +208,8 @@
 
 /* Content Grid */
 .content-grid {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
@@ -260,6 +264,8 @@
 
 /* Bottom Section */
 .bottom-section {
+  width: 90%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
@@ -312,6 +318,7 @@
 }
 
 .bottom-image-main {
+  display: none;
   flex: 1;
   max-height: 300px;
   object-fit: cover;
@@ -414,6 +421,9 @@
   .container {
     padding: 0 16px;
   }
+  .side-image{
+    height: auto;
+  }
 
   .values-section{
     text-align: center;
@@ -431,7 +441,7 @@
 
   .main-image{
     height:180px;
-    width: 240px;
+    width: 100%;
   }
 
   .secondary-image {
@@ -596,6 +606,15 @@
     grid-template-columns: 1fr;
     gap: 50px;
     text-align: center;
+  }
+
+  .custom-solutions{
+  display: flex;
+  flex-direction: column;
+  }
+  .proven-results{
+    display: flex;
+    flex-direction: column-reverse;
   }
   
   .custom-solutions,
@@ -797,10 +816,6 @@
 }
 
 /* Text Content */
-.text-content {
-  padding: 0 20px;
-}
-
 .text-content h2 {
   font-size: 2.8rem;
   font-weight: 700;
@@ -891,6 +906,16 @@
       "image"
       "text";
   }
+
+  .packaging-concept{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .brand-identity{
+    display: flex;
+  flex-direction: column-reverse;
+  }
   
   .text-content h2 {
     font-size: 2.4rem;
@@ -961,6 +986,7 @@
   
   .concept-section {
     padding: 60px 0;
+    padding-bottom: 0;
   }
 
   .concept-block{

@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-height: 160px;
+  height: 160px;
 }
 
 .nav-links a {
@@ -37,12 +37,11 @@ height: 160px;
 }
 
 .nav-links a:hover {
-  color: #121568; /* Use the same color for hover for consistency or a slightly different shade */
+  color: #121568;
 }
 
-/* Optional: Add a simple underline on hover */
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -56,12 +55,97 @@ height: 160px;
   width: 100%;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hamburger:hover {
+  transform: scale(1.1);
+}
+
+.nav-modal {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: white;
+  width: 100vw;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 13vh 0;
+  gap: 1rem;
+  
+  /* Initially hidden to the right */
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.nav-modal-open {
+  /* Slide in from right */
+  transform: translateX(0);
+}
+
+.x {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.x:hover {
+  transform: scale(1.1) rotate(90deg);
+}
+
+.nav-modal a {
+  text-decoration: none;
+  color: #121568;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  width: 80%;
+  text-align: center;
+  transition: ease-in-out 0.2s all;
+}
+
+.nav-modal a:hover {
+  scale: 1.2;
+}
+
+/* Optional backdrop overlay */
+.nav-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 480px) {
-  .logo{
+  .logo {
     height: 100px;
   }
 
-  .nav-links{
+  .nav-links {
     display: none;
+  }
+  
+  .hamburger {
+    display: block;
   }
 }

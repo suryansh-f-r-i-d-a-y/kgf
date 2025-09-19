@@ -76,7 +76,7 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-      {/* <section className="business-section">
+      <section className="business-section" id='home' style={{paddingTop: '60px'}}>
         <div className="container">
           <div className="hero-content-wrapper">
             <div className="text-content">
@@ -109,12 +109,12 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* sction2 */}
 
 
-      {/* <section className="about-section">
+      <section className="about-section" id='about'>
         <div className="container">
           <div className="header-section">
             <h1 className="main-title">About Us</h1>
@@ -132,11 +132,11 @@ const Landing = () => {
                   alt="Variety of spices and dried ingredients"
                   className="main-image"
                 />
-                <img
+                {/* <img
                   src="https://i.pinimg.com/736x/43/c8/45/43c8458bf0b61c46c6bc6ed028aa9106.jpg"
                   alt="Dried orange slices and cinnamon sticks"
                   className="secondary-image"
-                />
+                /> */}
               </div>
             </div>
 
@@ -200,11 +200,11 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* section-3 */}
 
-      {/* <section className="offer-section">
+      <section className="offer-section">
         <div className="container">
 
           <div className="offer-header-content">
@@ -251,7 +251,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* section-4 */}
 
@@ -276,7 +276,7 @@ const Landing = () => {
 
       {/* sectoin-4 */}
 
-      {/* <section className="concept-section">
+      <section className="concept-section">
         <div className="container">
 
           <div className="concept-block packaging-concept">
@@ -316,12 +316,15 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* seection-5 */}
 
-      {/* <section className="gallery-section">
+      <section className="gallery-section">
         <div className="container">
+          <div className='info-container'>
+            <h1 className='contact-title' style={{textAlign:'center', color:'#121568'}}>Image Gallery</h1>
+          </div>
           <div className="gallery-grid">
             {galleryImages.map((item)=>{
               return(
@@ -331,11 +334,11 @@ const Landing = () => {
             }
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* section-6 */}
 
-      {/* <section className="contact-section">
+      <section className="contact-section">
         <div className="container">
           <div className="contact-wrapper">
 
@@ -420,9 +423,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
