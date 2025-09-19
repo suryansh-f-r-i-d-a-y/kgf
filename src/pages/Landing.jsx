@@ -11,17 +11,17 @@ const Landing = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1607672632458-9eb56696346b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      src: "https://i.pinimg.com/1200x/c6/e7/f0/c6e7f0a18faa5a1829146e00a4b9f125.jpg",
       alt: "Close-up view of fresh almonds with natural texture"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1515443961218-a51367888e4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      src: "https://i.pinimg.com/1200x/75/ad/ec/75adecce68ee83de89bbb6edb1149b55.jpg",
       alt: "Colorful quinoa salad bowl with vegetables and nuts"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      src: "https://i.pinimg.com/736x/32/af/7c/32af7c2a06b3f4934daefdcaf9c6aa48.jpg",
       alt: "Bare winter tree against cloudy sky"
     },
     {
@@ -31,7 +31,7 @@ const Landing = () => {
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1571771019784-3ff35f4f4277?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+      src: "https://i.pinimg.com/736x/47/27/f1/4727f154e0c9787395ad9355f9647d03.jpg",
       alt: "Fresh pomegranate cut open showing ruby red seeds"
     }
   ];
@@ -76,7 +76,7 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-      <section className="business-section">
+      {/* <section className="business-section">
         <div className="container">
           <div className="hero-content-wrapper">
             <div className="text-content">
@@ -109,12 +109,12 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* sction2 */}
 
 
-      <section className="about-section">
+      {/* <section className="about-section">
         <div className="container">
           <div className="header-section">
             <h1 className="main-title">About Us</h1>
@@ -128,7 +128,7 @@ const Landing = () => {
             <div className="left-column">
               <div className="image-stack">
                 <img
-                  src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                  src="https://i.pinimg.com/1200x/dd/30/9f/dd309f94cbf27ce8fd01ecea67e2b40b.jpg"
                   alt="Variety of spices and dried ingredients"
                   className="main-image"
                 />
@@ -187,7 +187,7 @@ const Landing = () => {
               />
               <div className="side-image-container">
                 <img
-                  src="https://images.unsplash.com/photo-1606728035253-49e8a23146de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                  src="https://i.pinimg.com/1200x/ec/b5/ec/ecb5ec9cafb113497937f3b1cc61925a.jpg"
                   alt="Dried apricots in crystal bowl"
                   className="side-image"
                 />
@@ -200,11 +200,11 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* section-3 */}
 
-      <section className="offer-section">
+      {/* <section className="offer-section">
         <div className="container">
 
           <div className="offer-header-content">
@@ -251,11 +251,11 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* section-4 */}
 
-      <section className="pricing-section">
+      {/* <section className="pricing-section">
         <div className="container">
 
           <div className="header-content">
@@ -272,7 +272,7 @@ const Landing = () => {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* sectoin-4 */}
 
@@ -320,7 +320,7 @@ const Landing = () => {
 
       {/* seection-5 */}
 
-      <section className="gallery-section">
+      {/* <section className="gallery-section">
         <div className="container">
           <div className="gallery-grid">
             {galleryImages.map((item)=>{
@@ -331,11 +331,11 @@ const Landing = () => {
             }
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* section-6 */}
 
-      <section className="contact-section">
+      {/* <section className="contact-section">
         <div className="container">
           <div className="contact-wrapper">
 
@@ -420,7 +420,7 @@ const Landing = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <Footer /> */}
     </>

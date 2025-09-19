@@ -12,11 +12,12 @@
   
   /* Gallery Grid */
   .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 300px);
-    gap: 20px;
-    width: 100%;
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 300px);
+                    gap: 20px;
+                        width: 100%;
+                          
   }
   
   /* Gallery Items */
@@ -51,22 +52,7 @@
     transform: scale(1.1);
   }
   
-  /* Image Overlay */
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(18, 21, 104, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-  
-  .gallery-item:hover .image-overlay {
+  .gallery-item:hover {
     opacity: 1;
   }
   
