@@ -76,7 +76,7 @@ const Landing = () => {
   return (
     <>
       <Navbar />
-      <section className="business-section" id='home' style={{paddingTop: '60px'}}>
+      <section className="business-section" id='home'>
         <div className="container">
           <div className="hero-content-wrapper">
             <div className="text-content">
