@@ -5,7 +5,7 @@ import { X, Menu } from 'lucide-react';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  
   useEffect(() => {
     let lastScrollTop = 0;
     const navbar = document.getElementById('myNavbar');
@@ -48,10 +48,9 @@ const Navbar = () => {
           <a href="#home">Home page</a>
           <a href="#about">About Us</a>
         </nav>
-        <nav>
+        <nav className='hamburger' >
           <Menu 
             color="#121568" 
-            className='hamburger' 
             onClick={toggleMenu}
           />
         </nav>
